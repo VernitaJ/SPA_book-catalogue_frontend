@@ -1,0 +1,394 @@
+.App {
+  margin-top: 0;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(https://images2.alphacoders.com/261/26102.jpg) repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+.like-button {
+  text-align: center;
+}
+
+.app__heading {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  margin: 25px;
+  margin-left: 60px;
+  margin-right: 200px;
+  font-family: Verdana;
+}
+.app__navbar-list {
+  background-color: rgba(39, 95, 41, 0.8);
+  height: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 10px;
+  padding-right: 80px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.app__navbar-item,
+.app__navbar-item:visited {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.app__navbar-item:hover {
+  color: lightgray;
+}
+
+.liked {
+  background-color: blue;
+  width: 40px;
+  height: 20px;
+  border: none;
+  box-shadow: 10px, 10px, 10px, 10;
+  margin-bottom: 20px;
+}
+
+.not-liked {
+  background-color: red;
+  width: 40px;
+  height: 20px;
+  border: none;
+  box-shadow: 10px, 10px, 10px, 10;
+  right: 0;
+}
+
+.site-heading {
+  color: white;
+  font-size: 60px;
+  padding: 20px;
+}
+
+.subscribe {
+  width: 250px;
+  display: flex;
+  flex-flow: wrap;
+  margin-left: 35px;
+  background-color: rgba(39, 95, 41, 0.8);
+  box-shadow: 4px 1px 3px 2px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.subscribe button {
+  color: rgb(250, 250, 242);
+  font-weight: bold;
+  font-size: 13px;
+  margin: 20px;
+  border-radius: 1em;
+  height: 40px;
+  background: darkred;
+  border: none;
+  float: right;
+  width: 140px;
+}
+
+.subscribe label {
+  color: white;
+  font-weight: bold;
+  margin: 15px;
+  font-family: helvetica;
+  font-size: 20px;
+}
+
+.subscribe input {
+  color: grey;
+  padding: 5px;
+  font-family: helvetica;
+  font-size: 20px;
+}
+
+.signup {
+  color: rgb(250, 250, 242);
+  font-weight: bold;
+  font-size: 15px;
+  position: fixed;
+  padding: 10px;
+  right: 4px;
+  height: 60px;
+  float: right;
+  margin-top: -100px;
+  background: darkred;
+  border: none;
+  width: 100px;
+  z-index: 2;
+}
+
+a {
+  cursor: url("https://img.kango-roo.com/upload/images/ki/red-book.png");
+}
+
+.signup:hover {
+  font-size: 17px;
+}
+
+.home__container,
+.book-view__container {
+  display: flex;
+  align-items: justify;
+  flex-wrap: wrap;
+}
+
+.home__book-container {
+  display: block;
+  background-color: rgba(000, 000, 000, 0.7);
+  justify-content: space-around;
+  border-radius: 20px 20px;
+  width: 300px;
+  height: auto;
+  margin: 30px;
+  align-items: stretch;
+}
+
+.home__book-image {
+  height: 200px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+.home__book-image:hover {
+  transform: rotate(-1deg);
+  display: block;
+  padding: 5px;
+}
+
+.home__link {
+  text-decoration: none;
+}
+
+.home__book-heading {
+  margin: 20px;
+  font-weight: bold;
+  width: 300px;
+  font-size: 20px;
+  color: white;
+}
+
+.book-view__text {
+  font-size: 15px;
+  margin: 5%;
+  margin-bottom: 20px;
+}
+
+.home__book-isbn {
+  display: block;
+  float: right;
+  color: white;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.book-view__container {
+  display: flex;
+}
+.book-view__book-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(247, 241, 241, 0.8);
+  width: 700px;
+  height: auto;
+  padding: 40px;
+  padding-top: 10px;
+  margin: 30px;
+  border: solid green;
+}
+
+.book-view__image {
+  height: 300px;
+  margin-right: 70px;
+}
+
+.book-view__heading {
+  width: 800px;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(6, 8, 8);
+}
+
+.book-view__isbn {
+  width: 400px;
+}
+
+.book-view__text {
+  width: 300px;
+  margin-top: 0;
+}
+
+.book-view__button-link {
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 20px;
+  background-color: darkgreen;
+  border-radius: 5px 5px;
+}
+
+.home__search-label {
+  color: white;
+  margin-left: 35px;
+  font-size: 25px;
+}
+
+input.search {
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+  height: 25px;
+  width: 290px;
+  padding: 5px;
+}
+
+.about-view__block {
+  display: flex;
+  margin-left: 25px;
+  color: white;
+  background-color: rgba(39, 95, 41, 0.8);
+}
+.about-view__heading {
+  color: white;
+  margin-left: 25px;
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.about-view__paragraph {
+  width: 800px;
+  margin: 25px;
+}
+
+.about-view__librarian-image {
+  height: 400px;
+  margin: 25px;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 480px),
+  only screen and (max-device-width: 480px) {
+  .App {
+    background: url(https://images2.alphacoders.com/261/26102.jpg) repeat;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+  }
+
+  .book {
+    display: block;
+    background-color: rgba(247, 241, 241, 0.8);
+    justify-content: space-around;
+    width: 95%;
+    height: auto;
+    margin: 5px;
+    border: solid green;
+    align-items: stretch;
+  }
+
+  .book-image {
+    height: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .book-heading {
+    margin: 30px;
+    font-weight: bold;
+    width: 90%;
+    font-size: 30px;
+    color: rgb(6, 8, 8);
+  }
+
+  .book-text {
+    font-size: 25px;
+    margin: 5%;
+    margin-bottom: 20px;
+  }
+
+  .book-isbn {
+    font-size: 12px;
+    float: bottom;
+    margin: 5%;
+  }
+
+  .signup {
+    color: rgb(250, 250, 242);
+    font-weight: bold;
+    font-size: 25px;
+    position: fixed;
+    right: 4px;
+    height: 90px;
+    float: right;
+    margin-top: -50px;
+    background: darkred;
+    width: 140px;
+    z-index: 2;
+  }
+
+  label.search {
+    display: none;
+  }
+
+  input.search {
+    font-size: 15px;
+    margin-left: 10px;
+    border: solid yellow 2px;
+    height: 25px;
+    width: 200px;
+    padding: 5px;
+  }
+}
+
+.textblock {
+  max-width: 1100px;
+  margin-top: 40px;
+  margin-left: 40px;
+  background: linear-gradient(35deg, white, #f9f9f9);
+  font-size: 18px;
+  padding: 35px;
+}
+
+.headerimage {
+  background: url("http://bestanimations.com/Books/finger-passes-along-book-spines-library-animated-gif.gif")
+    repeat center;
+  position: relative;
+  background-attachment: fixed;
+  height: 200px;
+  font-size: 100px;
+  color: white;
+  font-family: Helvetica;
+  text-indent: 50px;
+}
+
+.backimage1 {
+  background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.guim.co.uk%2Fsys-images%2FGuardian%2FPix%2Fpictures%2F2015%2F2%2F20%2F1424454392161%2FLibrary-books-009.jpg&f=1&nofb=1")
+    no-repeat center;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+.backimage2 {
+  background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fprod-upp-image-read.ft.com%2F054d65c6-62bc-11e3-bba5-00144feabdc0&f=1&nofb=1")
+    repeat center;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+.backimage3 {
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthenypost.files.wordpress.com%2F2019%2F03%2Fold-library-book.jpg%3Fquality%3D90%26strip%3Dall%26w%3D1200&f=1&nofb=1")
+    center;
+  background-attachment: fixed;
+  height: 300px;
+}
